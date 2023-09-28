@@ -17,7 +17,7 @@ the images are generated using the [imgflip API](https://api.imgflip.com/)
 
 1. The user enters two words in the inputs
 2. The user clicks on the button
-3. The app bring an image from an array of images that I fetch from the API and stored in a separate file `memes.js`
+3. The app bring an image from an array of images that I fetch from the API and stored in a separate file `memes.js` which is in the `src/assets` folder
 4. The App returns a random image with the words entered by the user
 5. The app displays the image in the screen
 
