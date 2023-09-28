@@ -1,8 +1,37 @@
-# React + Vite
+# Meme Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This is a meme generator that allows you to enter two words in inputs and it will generate an Image  with the words you entered.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+the images are generated using the [imgflip API](https://api.imgflip.com/)
+
+## How to use
+
+1. Clone the repository
+2. run `npm install` to install the dependencies
+3. run `npm dev` to start the server
+4. go to `localhost:5173` in your browser
+
+## How it works
+
+1. The user enters two words in the inputs
+2. The user clicks on the button
+3. The app bring an image from an array of images that I fetch from the API and stored in a separate file `memes.js`
+4. The App returns a random image with the words entered by the user
+5. The app displays the image in the screen
+
+## Technologies used
+
+- React
+- Tailwind CSS
+
+## What I learned
+
+- How to use the [imgflip API](https://api.imgflip.com/)
+- How to use Tailwind CSS
+- How to use React Hooks
+
+## Authors
+
+- [Junior Hirwa](https://github.com/HIRWA13)
