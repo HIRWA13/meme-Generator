@@ -2,10 +2,11 @@ import { useState } from "react";
 import memes from "../assets/memes";
 
 export default function Main() {
-  const [memesImg, setMemesImg] = useState("https://i.imgflip.com/345v97.jpg");
+  const [memesImg, setMemesImg] = useState("https://i.imgflip.com/28j0te.jpg");
   const [words, setWords] = useState({
     top: "",
-    bottom: ""
+    bottom: "",
+    // randomImage: ""
   })
   const wordsHandler = (e) => {
     const {name, value} = e.target
@@ -63,10 +64,14 @@ export default function Main() {
               Generate meme
             </button>
           </form>
-          <img 
-            src={memesImg}
-            className="h-64 w-full mt-2"
-            />
+         <div className="relative">
+            <img 
+                src={memesImg}
+                className="h-64 w-full mt-2"
+                />
+            <h1 className="max-w-2xl text-white mb-4 text-4xl font-extrabold tracking-tight leading-none drop-shadow-xl shadow-black absolute top-3 left-44">{words.top}</h1>
+            <h1 className="max-w-2xl text-white mb-4 text-4xl font-extrabold tracking-tight leading-none drop-shadow-lg shadow-black absolute bottom-3 left-44">{words.bottom}</h1>
+         </div>
         </div>
       </section>
     </>
