@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <section className="w-2/4 bg-white shadow-md mx-auto mt-10">
+     <section className="w-2/4 bg-white shadow-md mx-auto mt-10 rounded-md">
         <Header/>
         <Main/>
         <Footer/>

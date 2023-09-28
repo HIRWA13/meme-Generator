@@ -6,7 +6,6 @@ export default function Main() {
   const [words, setWords] = useState({
     top: "",
     bottom: "",
-    // randomImage: ""
   })
   const wordsHandler = (e) => {
     const {name, value} = e.target
@@ -19,11 +18,6 @@ export default function Main() {
  }
   const memeHandler = (e) => {
     e.preventDefault();
-    const wordsCombined = {
-        top: words.top,
-        bottom: words.bottom
-    }
-    console.log(wordsCombined)
     const memesData = memes.data.memes;
     const random = Math.floor(Math.random() * memesData.length);
     const url = memesData[random].url;
